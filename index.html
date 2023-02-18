@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/logo.png" type="image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Kitty Dinger</title>
+    <!--Google Fonts----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <!--Bootstrap----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--JS includes----->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="recent-news-boxes.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup">
+    <div class="contentbox">
+      <div class="close"></div>
+      <div class="imgbx">
+        <img src = "images/pupnft.png">
+      </div>
+      <div class="imBx">
+          <div class="content">
+            <div>
+              <h4>NFT is live!</h4>
+              <a href="https://kittydinger.com/"> Mint now</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>  
+  <script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+    
+    window.onload = function(){
+      setTimeout(function(){
+        popup.style.display = "block"
+      }, 1000)
+
+      close.addEventListener('click', () => {
+        popup.style.display = "none";
+      })
+    }
+    </script>
+
+  <!-- NAVBAR------------------------------------------------------------------------------>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="margin-right:auto;"><img class="navbarLogo" src="images/logo.png" alt="logo"><span class="align-middle centerAlignSpan"></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="margin-left:auto;">
+            <a class="nav-link" href="index.html" aria-current="page">HOME</a>
+            <a class="nav-link" href="#use" >USECASE</a>
+            <a class="nav-link" href="#nomics" >KITTYNOMICS</a>
+            <a class="nav-link" href="#road" >ROADMAP</a>
+            <a class="nav-link" a href="https://whitepaperdoc.gitbook.io/kittydingerwhitepaper/" >WHITEPAPER</a>
+            <a class="nav-link" href="kd/index.html" target="_blank">MINT NFT</a>
+            <a class="nav-link" href="https://app.uniswap.org/#/swap?outputCurrency=0x2c33b28527a63cdf13c0b24ce4cf5bf9c9fb3bc6" target="_blank">BUY</a>
+            <a class="nav-link" href="#" >LAUNCHPAD <br><span class="navsmol">(COMING SOON)</span></a>
+            <a class="nav-link" href="#" >METAVERSE<br><span class="navsmol">(COMING SOON)</span></a>
+            <a class="nav-link" href="#" >KITTUP WALLET<br><span class="navsmol">(COMING SOON)</span></a>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <div class="overwrap">
+    <!-- title frame---------------------------------------------------------------------------->
+    <div class="container-fluid titleFrame big">
+      <img class="titlebg big" src="images/titleBg.png" alt="background">
+      <img class="titlebg small" src="images/titleBg.png" alt="background">
+      <div class=" verticleAlignContent divContent titlecontent">
+        <div class="row">
+          <div class="col-lg-4">
+                      <div id="carouselExampleInterval" class="carousel slide valign" data-bs-ride="carousel" >
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="6000">
+                            <img class="Titletweet" src="images/twitter1.png" alt="Kitty Dinger">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="6000">
+                            <img class="Titletweet" src="images/twitter2.png" alt="Kitty Dinger">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="6000">
+                            <img class="Titletweet" src="images/twitter3.png" alt="Kitty Dinger">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="6000">
+                            <img class="Titletweet" src="images/twitter4.png" alt="Kitty Dinger">
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="socialMediaLinks">
+              <span class="socialsSpacing"> <a href="https://www.instagram.com/theschrodingerofficial/?utm_medium=copy_link" target="_blank"> <img class="socialLinks" src="images/instagram.png" alt="instagram"> </a></span>
+              <span class="socialsSpacing"> <a href="https://t.me/Schrodingercommunity" target="_blank"> <img class="socialLinks" src="images/telegram.png" alt="telegram"> </a></span>
+              <span class="socialsSpacing"> <a href="https://twitter.com/KittyDinger?s=20" target="_blank"> <img class="socialLinks" src="images/twitter.png" alt="twitter"> </a></span>
+              <span class="socialsSpacing"> <a href="https://discord.com/invite/evHSXcgba9" target="_blank"> <img class="socialLinks" src="images/discord.png" alt="discord"> </a></span>
+            </div><br>
+            <h1 id="titleHeading">WELCOME<br>TO<br>KITTYDINGER</h1>
+            <img class="TitleImg2" src="images/3.png" alt="Kitty Dinger">
+          </div>
+          <div class="col-lg-4">
+            <div id="carouselExampleFade" class="carousel slide valign" data-bs-ride="carousel" >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img class="Titletweet" src="images/twitter4.png" alt="Kitty Dinger">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img class="Titletweet" src="images/twitter3.png" alt="Kitty Dinger">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img class="Titletweet" src="images/twitter2.png" alt="Kitty Dinger">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img class="Titletweet" src="images/twitter1.png" alt="Kitty Dinger">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        </div>
+    </div>
+    <!-- title frame small--------------------------------------------------------------------------->
+    <div class="container-fluid titleFrame small">
+      <img class="titlebg big" src="images/titleBg.png" alt="background">
+      <img class="titlebg small" src="images/titleBg.png" alt="background">
+      <div class=" verticleAlignContent divContent titlecontent">
+        <div class="row">
+
+         <div class="col-lg-3">
+           <div class="socialMediaLinks">
+             <span class="socialsSpacing"> <a href="https://www.instagram.com/theschrodingerofficial/?utm_medium=copy_link" target="_blank"> <img class="socialLinks" src="images/instagram.png" alt="instagram"> </a></span>
+             <span class="socialsSpacing"> <a href="https://t.me/Schrodingercommunity" target="_blank"> <img class="socialLinks" src="images/telegram.png" alt="telegram"> </a></span>
+             <span class="socialsSpacing"> <a href="https://twitter.com/KittyDinger?s=20" target="_blank"> <img class="socialLinks" src="images/twitter.png" alt="twitter"> </a></span>
+             <span class="socialsSpacing"> <a href="https://discord.com/invite/evHSXcgba9" target="_blank"> <img class="socialLinks" src="images/discord.png" alt="discord"> </a></span>
+           </div>
+         </div>
+          <div class="col-lg-3 mt-3 carasize">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade valign" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="Titletweet" src="images/twitter1.png" alt="Kitty Dinger">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="Titletweet" src="images/twitter2.png" alt="Kitty Dinger">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="Titletweet" src="images/twitter3.png" alt="Kitty Dinger">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="Titletweet" src="images/twitter4.png" alt="Kitty Dinger">
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="col-lg-6">
+            <h1 id="titleHeading">WELCOME<br>TO<br>KITTYDINGER</h1>
+            <img class="TitleImg2" src="images/3.png" alt="Kitty Dinger">
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+
+    <!-- frame 2--------------------------------------------------------------------------->
+    <div class="container-fluid frame2">
+      <div class="row divContent">
+        <div class="col-lg-7 my-auto">
+          <p class="f2para">Schrodinger is a community-driven cryptocurrency meme project named after Elon Musk's cat. We aim to build an ecosystem of decentralized applications while generating funds to support charities around the world. We believe that by creating a community-driven token that supports and is intrinsically linked to non-profits worldwide, we can play a role in making the world a better place.</p>
+        </div>
+        <div class="col-lg-5">
+          <img class="frame2img" src="images/1.gif" alt="kittydinger">
+        </div>
+      </div>
+    </div>
+    <!-- SECTION Divider-------------------------------------------------------------------------->
+    <div class="container-fluid sectiondivi" id="use">
+      <div class="bgtxtsection">
+      <center>  <span class="divibgtext">USECASE</span></center>
+          <center><span class="maindivitxt">USECASE</span></center>
+      </div>
+
+    </div>
+    </div>
+<!-- FRAME 3 HORIZONTAL------------------------------------------------------------------------>
+ <div class="wrapper" id="js-wrapper">
+        <div class="sections" id="js-slideContainer">
+           <section class="section">
+            <div class="layer"></div>
+            <div class="content">
+              <div class="row">
+                <div class="col-lg-8 my-auto colimg">
+                  <img class="f3imgsm" src="images/incubator.png" alt="kitty dinger">
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <h3>Kittpad</h3><br>
+                  <p>To help tackle the problem of rugs and scams in decentralized finance, Kittpad will provide its holders with early access to safe, innovative projects with a relatively high potential. Strict measures will be taken to ensure the credibility of developers, thereby drastically reducing the risk of fraud and malfeasance.</p>
+                </div>
+              </div>
+             </div>
+           </section>
+           <section class="section">
+            <div class="layer"></div>
+             <div class="content">
+               <div class="row">
+                 <div class="col-lg-8 my-auto colimg">
+                   <img class="f3imgsm" src="images/charitykd.png" alt="kitty dinger">
+                 </div>
+                 <div class="col-lg-4 my-auto">
+                   <h3>Cat Charity</h3><br>
+                   <p>Kitty Dinger aims to support cat non-profit foundations by providing necessary supplies and monetary funds to help improve the well-being of stray and sheltered cats. We believe that by creating a community-driven token that supports and is linked to non-profits around the world, we can all benefit.</p>
+                 </div>
+               </div>
+             </div>
+           </section>
+           <section class="section">
+            <div class="layer"></div>
+             <div class="content">
+               <div class="row">
+                 <div class="col-lg-8 my-auto colimg">
+                   <img class="f3imgbig" src="images/kittup.png" alt="kitty dinger">
+                 </div>
+                 <div class="col-lg-4 my-auto">
+                   <h3>KittUp Wallet</h3><br>
+                   <p>With proper funding, KittUp wallet will be developed to integrate multiple addresses on many different blockchains as well as other features which will be revealed as the development commences.</p>
+                 </div>
+               </div>
+             </div>
+           </section>
+           <section class="section">
+            <div class="layer"></div>
+             <div class="content">
+               <div class="row">
+                 <div class="col-lg-8 my-auto colimg">
+                   <img class="f3img" src="images/kittyverse.jpg" alt="kitty dinger">
+                 </div>
+                 <div class="col-lg-4 my-auto">
+                   <h3>Kitty Metaverse P2E</h3><br>
+                   <p>The team has already begun development of the Schrodinger Play-to-Earn game set for release shortly. Online video games have become more prevalent in recent years, with MMORPG and P2E games rising to dominate market share. The Schrodinger P2E game will be a fun, relaxing, and lucrative way for the community to earn daily passive income.</p>
+                 </div>
+               </div>
+             </div>
+           </section>
+        </div>
+    </div>
+  <div class="overwrap">
+    <!--  SECTION Divider--------------------------------------------------------------------------->
+      <div class="container-fluid sectiondivi" id="nomics">
+        <div class="bgtxtsection">
+        <center>  <span class="divibgtext">KITTYNOMICS</span></center>
+            <center><span class="maindivitxt">KITTYNOMICS</span></center>
+        </div>
+
+      </div>
+      <!-- frame 4---------------------------------------------------------------------------->
+      <div class="container-fluid frame4">
+        <div class="row divContent">
+          <div class="col-lg-6 my-auto">
+            <img class="frame4img" src="images/2.gif" alt="kittydinger">
+          </div>
+          <div class="col-lg-6 my-auto">
+            <p>
+              <span class="tokheads">1 TRILLION</span><br>
+              TOTAL SUPPLY
+            </p>
+            <p>
+              <span class="tokheads">10% TAX</span><br>
+              2% REWARDS, 1% LIQUIDITY,<br>
+              2% DEVELOPMENT,<br>
+              5% MARKETING WALLET (1% to donation)<br>
+            </p>
+            <p>
+              <span class="tokheads">$KITTY DINGER</span><br>
+              TOKEN SYMBOL
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION Divider------------------------------------------------------------------------->
+      <div class="container-fluid sectiondivi" id="road">
+        <div class="bgtxtsection">
+        <center>  <span class="divibgtext">ROADMAP</span></center>
+            <center><span class="maindivitxt">ROADMAP</span></center>
+        </div>
+      </div>
+</div>
+<!--Section 2 frame 5 horizontal--------------------------------------->
+<div class="wrapper2" id="js-wrapper2">
+       <div class="sections2" id="js-slideContainer2">
+          <section class="section2">
+           <div class="layer2"></div>
+           <div class="content2">
+             <div class="row">
+               <div class="col my-auto">
+                 <img class="f5img" src="images/4.png" alt="kitty dinger">
+               </div>
+             </div>
+            </div>
+          </section>
+          <section class="section2">
+           <div class="layer2"></div>
+            <div class="content2">
+              <div class="row">
+                <div class="col my-auto">
+                  <h3>Q1 2022</h3>
+                  <ul class="list">
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">NFT Launch</li>
+                    <li><img class="greytick" src="images/whitetick.png" alt="kittydinger">Chainlink integration</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">KittUp Wallet Audit</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">KittUp Wallet & Kittpad Launch</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Mega Buyback/Burn & Marketing</li><br>
+                  </ul>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="section2">
+           <div class="layer2"></div>
+            <div class="content2">
+              <div class="row">
+                <div class="col my-auto">
+                  <h3>  Q2 2022</h3>
+                  <ul class="list">
+                      <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Marketing Campaign</li>
+                    <li> <img class="greytick" src="images/greytick.png" alt="kittydinger">Tier 1-2 Cex listings</li>
+                    <li> <img class="greytick" src="images/greytick.png" alt="kittydinger">Partnerships</li>
+                      <li><img class="greytick" src="images/greytick.png" alt="kittydinger">YouTube Marketing campaign</li>
+                      <li><img class="greytick" src="images/greytick.png" alt="kittydinger">KittUp Wallet 100k users</li>
+                      <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Kittmanji Launch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section2">
+           <div class="layer2"></div>
+            <div class="content2">
+              <div class="row">
+                <div class="col my-auto">
+                  <h3>Q3 2022</h3>
+                  <ul class="list">
+                      <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Kittmanji Tournament</li>
+                    <li>  <img class="greytick" src="images/greytick.png" alt="kittydinger">Staking USDT Distribution</li>
+                      <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Times Square Billboard</li>
+                    <li> <img class="greytick" src="images/greytick.png" alt="kittydinger">Marketing Campaign</li><br><br>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section2">
+           <div class="layer2"></div>
+            <div class="content2">
+              <div class="row">
+                <div class="col my-auto">
+                  <h3>Q4 2022</h3>
+                  <ul class="list">
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Wikipedia Page</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Kittchain (Layer 2 Blockchain)</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Global Outreach</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">KittUp Wallet V2</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">Airdrop to KittUp Wallet Users</li>
+                    <li><img class="greytick" src="images/greytick.png" alt="kittydinger">1 million KittUp Wallet Users</li>
+                  </ul>
+              </div>
+              </div>
+            </div>
+          </section>
+       </div>
+   </div>
+  <div class="overwrap">
+   <!--  SECTION Divider----------------------------------------------------------------------------->
+   <div class="container-fluid sectiondivi">
+     <div class="bgtxtsection">
+     <center>  <span class="divibgtext">KITTY DINGER NFTS</span></center>
+         <center><span class="maindivitxt">KITTY DINGER NFTS</span></center>
+     </div>
+
+   </div>
+   <!-- frame 6----------------------------------------------------------------------------->
+   <div class="container-fluid frame6">
+     <div class="row divContent mb-6">
+       <div class="col-lg-7 my-auto">
+         <p class="f6para">Build up your collection of Kitty Dinger NFTs by minting super unique kitties in different environments.<br>
+
+These NFTs will be used in our upcoming P2E game, Kittmanji.
+</p>
+       </div>
+       <div class="col-lg-5">
+         <img class="frame6img" src="images/kdnft.png" alt="kittydinger">
+       </div>
+     </div>
+   </div>
+   <!-- SECTION Divider------------------------------------------------------------------------->
+   <div class="container-fluid sectiondivi">
+     <div class="bgtxtsection">
+     <center>  <span class="divibgtext">AS SEEN ON</span></center>
+         <center><span class="maindivitxt">AS SEEN ON</span></center>
+     </div>
+   </div>
+  <!-- frame NEWS----------------------------------------------------------------------------->
+   <div class="container-fluid framenews mt-3" id="news">
+     <section class="recentNews" data-aos="fade-up">
+ <div class="container newscontainer">
+   <div class="row newsrow">
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://finance.yahoo.com/news/cryptocurrency-cat-trend-schrodinger-shoots-202800731.html" target="_blank"><img alt="News Entry" src="images/news1.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://news.yahoo.com/news/cryptocurrency-cat-trend-schrodinger-shoots-202800731.html" target="_blank"><img alt="News Entry" src="images/news2.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://money.yahoo.com/news/cryptocurrency-cat-trend-schrodinger-shoots-202800731.html" target="_blank"><img alt="News Entry" src="images/news3.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.marketwatch.com/press-release/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days-2021-11-10?tesla=y" target="_blank"><img alt="News Entry" src="images/news4.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.benzinga.com/pressreleases/21/11/24025910/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news5.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.bloomberg.com/press-releases/2021-11-10/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news6.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.wpgxfox28.com/story/45167038/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news7.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.wboc.com/story/45167038/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news8.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href=" https://www.wrde.com/story/45167038/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news9.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.nasdaq.com/press-release/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days-2021-11-10" target="_blank"><img alt="News Entry" src="images/news10.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://www.digitaljournal.com/pr/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news11.png"></a>
+         </div>
+       </div>
+     </div>
+     <div class="ct-blog col-md-6 col-lg-4">
+       <div class="inner">
+         <div class="fauxcrop">
+           <a href="https://cointelegraph.com/press-releases/new-cryptocurrency-cat-trend-schrodinger-shoots-up-over-500-in-4-days" target="_blank"><img alt="News Entry" src="images/news12.png"></a>
+         </div>
+       </div>
+     </div>
+ </div>
+</section>
+   </div>
+   <!-- frame sponsors--------------------------------------------------------------------------->
+   <div class="container-fluid framesp">
+     <div class="row divContent fspinfo">
+
+       <p><h2 class="sptitle">PARTNERED WITH</h2><br>
+       <img class="spimg" src="images/9gag.png" alt="kitty dinger"></p><br><br>
+
+       <p><h2 class="sptitle">AUDIT</h2><br>
+       <a href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/November/Schrodinger%20Full%20Smart%20Contract%20Security%20Audit.pdf" target="_blank"><img class="spimg" src="images/audit.png" alt="kitty dinger"></a></p><br><br>
+
+       <p><h2 class="sptitle">KYC'D WITH</h2><br>
+       <a href="https://twitter.com/AssureDefi/status/1455950564727169025?s=20" target="_blank"><img class="spimg" src="images/kyc.png" alt="kitty dinger"></a></p><br>
+
+     </div>
+   </div>
+ <!--  SECTION Divider----------------------------------------------------------------------------->
+   <div class="container-fluid sectiondivi">
+     <div class="bgtxtsection">
+     <center>  <span class="divibgtext">HOW TO BUY</span></center>
+         <center><span class="maindivitxt">HOW TO BUY</span></center>
+     </div>
+
+   </div>
+   <!-- frame 7----------------------------------------------------------------------------->
+   <div class="container-fluid frame7">
+     <div class="row divContent">
+       <div class="col-lg-7 my-auto">
+         <p class="f7para">
+
+1. Create A Wallet (Eg. Metamask) <br><br>
+2. Fund your Wallet with ETH <br><br>
+3. Input $KittyDinger address in Uniswap <br><br>
+4. Hit 'swap' (0.5-1% slippage recommended) <br><br>
+Contract Address: <span id="htbCTA"> 0x2C33B28527A63Cdf13C0B24Ce4cf5BF9C9fB3BC6 </span><br><br>
+
+</p>
+       </div>
+       <div class="col-lg-5">
+         <img class="frame7img" src="images/screenshot.png" alt="kittydinger">
+       </div>
+     </div>
+   </div>
+   <!-- frame VIDEO----------------------------------------------------------------------------->
+   <div class="container-fluid framevid">
+     <div class="divContent">
+       <div class="vidDiv">
+         <video autoplay muted loop controls class="kdvid">
+           <source  src="images/kdvid.mp4" type="video/mp4">
+           </video>
+       </div>
+     </div>
+   </div>
+   <!--  SECTION Divider----------------------------------------------------------------------------->
+     <div class="container-fluid sectiondivi">
+       <div class="bgtxtsection">
+       <center>  <span class="divibgtext">TEAM</span></center>
+           <center><span class="maindivitxt">TEAM</span></center>
+       </div>
+
+     </div>
+     <!-- frame 8----------------------------------------------------------------------------->
+     <div class="container-fluid frame8">
+       <div class="row divContent">
+         <div class="col">
+           <img class="f8img" src="images/Briantoshi.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="https://twitter.com/BriantoshiKitty" target="_blank">Briantoshi Nakamoto<br>(Co-founder, Product Development)</a></p>
+         </div>
+         <div class="col">
+           <img class="f8img" src="images/Gnostics.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="#" target="_blank">The SchrodingerMan<br>(Co-Founder, Solidity Dev)</a></p>
+         </div>
+         <div class="col">
+           <img class="f8img" src="images/Goran.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="https://twitter.com/Goranx10" target="_blank">Goran <br>(Co-founder, Technical Advisor)</a></p>
+         </div>
+         <div class="col">
+           <img class="f8img" src="images/gonthier.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="https://twitter.com/MickaelGonthier" target="_blank">Gonthier Mickael<br>(Marketing Advisor)</a></p>
+         </div>
+         <div class="col">
+           <img class="f8img" src="images/fudfighter.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="https://twitter.com/SaitamaAngel" target="_blank">FUD Fighter<br>(Marketing Advisor)</a></p>
+         </div>
+         <div class="col">
+           <img class="f8img" src="images/jarjar.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="https://twitter.com/JarSchrodinger" target="_blank">Jar Jar<br>(PR and Community Management)</a></p>
+         </div>
+         <div class="col">
+           <img class="f8img" src="images/andrew.png" alt="kitty dinger"><br>
+           <p><a class="teamLink" href="https://twitter.com/AcdcCrypto" target="_blank">Andrew<br>(Public Relation & Advisor)</a></p>
+         </div>
+       </div>
+     </div>
+</div>
+   <!-- Footer------------------------------------------------------------------------------>
+     <footer>
+     <center>
+       <img id="footerImg" src="images/logo.png" alt="Kitty Dinger">
+       <div class="socialMediaLinks">
+         <span class="socialsSpacing"> <a href="https://www.instagram.com/theschrodingerofficial/?utm_medium=copy_link" target="_blank"> <img class="socialLinks" src="images/instagram.png" alt="instagram"> </a></span>
+         <span class="socialsSpacing"> <a href="https://t.me/Schrodingercommunity" target="_blank"> <img class="socialLinks" src="images/telegram.png" alt="telegram"> </a></span>
+         <span class="socialsSpacing"> <a href="https://twitter.com/KittyDinger?s=20" target="_blank"> <img class="socialLinks" src="images/twitter.png" alt="twitter"> </a></span>
+         <span class="socialsSpacing"> <a href="https://discord.com/invite/evHSXcgba9" target="_blank"> <img class="socialLinks" src="images/discord.png" alt="discord"> </a></span>
+       </div>
+       <hr class="footerDivider">
+       <span>© 2021 KITTY DINGER | ERC-20</span></center>
+     <center><span style="display: block; margin-top: 10px;">© ThatCryptoCraze - Graphics & Design </span><br>
+     </footer>
+</div>
+<!-- END------------------------------------------------------------------------------------------------------------------>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
